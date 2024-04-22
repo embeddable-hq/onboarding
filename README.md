@@ -1,5 +1,5 @@
-# Homework
-Hello and welcome to the homework repository for the Embeddable onboarding sessions ❤️ We wish to thank you for being one of our customers and welcome any feedback you might have.
+# Embeddable Onboarding Repo
+Hello and welcome to the onboarding repository for the Embeddable onboarding sessions ❤️ We wish to thank you for being one of our customers and welcome any feedback you might have.
 
 ### Installation
 
@@ -23,7 +23,7 @@ This is a "Preview workspace" (local to you) that allows you make changes locall
 
 `npm run embeddable:dev` # opens a "Preview" workspace, that uses your local components and models
 
-### Homework
+### Challenge
 
 Your challenge is to create a **dropdown** component that 
 
@@ -39,9 +39,9 @@ Hints:
  
 ### Next steps
 
-Once you've completed the homework you're ready to hit the road running
+Once you've completed the challenge you're ready to hit the road running
 
- 1. You can clone our Embeddable **Components Starter Pack** [here](https://github.com/embeddable-hq/vanilla-components) (feel free to throw away this homework repository)
+ 1. You can clone our Embeddable **Components Starter Pack** [here](https://github.com/embeddable-hq/vanilla-components) (feel free to throw away this onboarding repository)
  2. You can **connect your own database** to your workspace by following the instructions [here](https://trevorio.notion.site/Connections-API-ff4af10f7eaf4288b6952fde04e6e933)
  3. Talk to us.  We're keen to help :)
 
