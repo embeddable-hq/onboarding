@@ -30,6 +30,13 @@ Your challenge is to create a **dropdown** component that
   1. takes a dataset and a dimension as its inputs
   2. updates a text variable when a value is selected from the dropdown.
 
+**Bonus challenge**: embed your dashboard:
+
+  1. click "Publish" on your dashboard and take a copy of your "API Key" and your "Embeddable Id"
+  2. `git clone https://github.com/embeddable-hq/web-component-example.git`
+  3. Add your "API Key" and "Embeddable Id" to the `src/test.js` file
+  4. Run `node src/test.js`
+
 Hints:
 
  - component should take a **dataset** and a **dimension** as its inputs.
