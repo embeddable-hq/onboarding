@@ -1,0 +1,3 @@
+node_modules
+.embeddable-build
+embeddable-entry-point.jsx

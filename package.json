@@ -1,0 +1,29 @@
+{
+  "name": "homework",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "engines": {
+    "npm": ">=9.0.0",
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "embeddable:build": "embeddable build",
+    "embeddable:push": "embeddable push",
+    "embeddable:login": "embeddable login",
+    "embeddable:dev": "cross-env NODE_OPTIONS='--max-old-space-size=4096' embeddable dev"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-chartjs-2": "^5.2.0"
+  },
+  "devDependencies": {
+    "@embeddable.com/core": "^2.5.5",
+    "@embeddable.com/react": "^2.5.5",
+    "@embeddable.com/sdk-core": "3.1.3",
+    "@embeddable.com/sdk-react": "3.1.2",
+    "cross-env": "^7.0.3"
+  }
+}
