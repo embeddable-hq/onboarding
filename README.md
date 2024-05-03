@@ -44,10 +44,9 @@ Hints:
 Your challenge is to embed your dashboard in a simple HTML file:
 
   1. click "Publish" on your dashboard and take a copy of your "API Key" and your "Embeddable Id"
-  2. `git clone https://github.com/embeddable-hq/web-component-example.git`
-  3. Add your "API Key" and "Embeddable Id" to the `src/test.js` file
-  4. Run `node src/test.js`
-  5. Open [http://localhost:8080/](http://localhost:8080/)
+  2. Add your "API Key" and "Embeddable Id" to the `src/embeddable.com/scripts/embedding-preview.cjs` file
+  3. Run `node src/embeddable.com/scripts/embedding-preview.cjs`
+  4. Open [http://localhost:8080/](http://localhost:8080/)
  
 ### Next steps
 
