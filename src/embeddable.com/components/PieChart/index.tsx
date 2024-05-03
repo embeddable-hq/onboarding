@@ -28,16 +28,24 @@ ChartJS.register(
 );
 
 const COLORS = [
-  '#A9DBB0',
-  '#F59E54',
-  '#F77A5F',
-  '#8FCBCF',
-  '#C3B0EA',
+  '#2859C5', 
+  '#F58D02',
+  '#964FD2',
+  '#FF6B6C',
+  '#B8B8D1',
+  '#FFC145',
+  '#4473D9',
+  '#FDA32B',
+  '#AF79DD',
+  '#FF9E9F',
+  '#D7D7E5',
+  '#FFD37A'
   ];
 
 const chartOptions = (showLegend) => ({
   responsive: true,
   maintainAspectRatio: false,
+  cutout: '45%',
   plugins: {
     legend: {
       display: showLegend
@@ -52,7 +60,8 @@ const chartData = (labels, counts) => {
       {
         data: counts,
         backgroundColor: COLORS,
-        borderColor: COLORS,
+        borderColor: '#fff',
+        borderWeight: 5
       }
     ]
   };
