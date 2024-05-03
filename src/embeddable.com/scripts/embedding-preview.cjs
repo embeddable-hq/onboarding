@@ -1,12 +1,13 @@
-const http = require("http");
-
 /*
  * Update API_KEY and EMBEDDABLE_ID below with your own 
  * (find these by clicking "Publish" on your Embeddable dashboard)
  * Then run `node src/test.cjs`
  */
-const API_KEY = '48224ce1-4e49-46d9-875b-57965e00bcab';
-const EMBEDDABLE_ID = '5f311740-d844-412e-aab8-4d9e632aba2f';
+const API_KEY = '...';
+const EMBEDDABLE_ID = '...';
+
+
+const http = require("http");
 
 const PORT = 8080;
 const SECURITY_CONTEXT = { 
