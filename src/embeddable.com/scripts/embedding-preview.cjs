@@ -5,7 +5,7 @@
  */
 const API_KEY = '...';
 const EMBEDDABLE_ID = '...';
-
+const BASE_URL = 'https://api.embeddable.com';
 
 const http = require("http");
 
@@ -22,7 +22,7 @@ const USER_KEY = 'some-user@domain.com';
 async function handler(req, res) {
     console.log('Fetching token...')
 
-    const response = await fetch(`https://api.embeddable.com/api/v1/security-token`, {
+    const response = await fetch(`${BASE_URL}/api/v1/security-token`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -64,11 +64,12 @@ async function handler(req, res) {
           <meta charset="utf-8" />
           <script
             type="module"
-            src="https://api.embeddable.com/js/v1/"
+            src="${BASE_URL}/js/v1/"
           ></script>
         </head>
         <body>
           <em-beddable
+            base-url="${BASE_URL}/"
             token="${json.token}"
           ></em-beddable>
         </body>
