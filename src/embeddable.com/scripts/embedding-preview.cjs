@@ -1,11 +1,12 @@
 /*
  * Update API_KEY and EMBEDDABLE_ID below with your own 
  * (find these by clicking "Publish" on your Embeddable dashboard)
- * Then run `node src/test.cjs`
  */
 const API_KEY = '...';
 const EMBEDDABLE_ID = '...';
-const BASE_URL = 'https://api.embeddable.com';
+
+const BASE_URL = 'https://api.embeddable.com'; // US
+// const BASE_URL = 'https://app-api.eu.embeddable.com'; // EU
 
 const http = require("http");
 

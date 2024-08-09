@@ -1,5 +1,9 @@
 const apiKey = '...';
 const connectionName = 'my-db'; 
+
+const BASE_URL = 'https://api.embeddable.com'; // US
+// const BASE_URL = 'https://app-api.eu.embeddable.com'; // EU
+
 /**
  * see db-specific examples @ https://trevorio.notion.site/Connections-API-ff4af10f7eaf4288b6952fde04e6e933
  */
@@ -13,7 +17,7 @@ const credentials = {
 }
 
 async function run() {
-    const resp = await fetch(`https://api.embeddable.com/api/v1/connections/${connectionName}`, {
+    const resp = await fetch(`${BASE_URL}/api/v1/connections/${connectionName}`, {
         method: 'PUT', // PUT = UPDATE
         headers: {
             'Content-Type': 'application/json',

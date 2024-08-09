@@ -1,7 +1,10 @@
 const apiKey = '...';
 
+const BASE_URL = 'https://api.embeddable.com'; // US
+// const BASE_URL = 'https://app-api.eu.embeddable.com'; // EU
+
 async function run() {
-    const resp = await fetch(`https://api.embeddable.com/api/v1/connections`, {
+    const resp = await fetch(`${BASE_URL}/api/v1/connections`, {
         method: 'GET', 
         headers: {
             'Content-Type': 'application/json',
