@@ -3,7 +3,7 @@ Hello and welcome to the onboarding repository for the Embeddable onboarding ses
 
 ### Installation
 
-`npm i` # requires node 18 or later
+`npm i` # requires node 20 or later
 
 ### Build & Deploy
 This is how you push code changes to your Embeddable workspace
