@@ -14,10 +14,15 @@
     "embeddable:dev": "cross-env NODE_OPTIONS='--max-old-space-size=4096' embeddable dev"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@fontsource/roboto": "^5.1.0",
+    "@mui/material": "^6.1.1",
     "chart.js": "^4.4.0",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
-    "react-chartjs-2": "^5.2.0"
+    "use-debounce": "^10.0.3"
   },
   "devDependencies": {
     "@embeddable.com/core": "^2.6.4",

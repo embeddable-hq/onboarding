@@ -1,5 +1,12 @@
 
 
+:host(.overflow-scroll) {
+	overflow: scroll;
+}
+
+
+
+
 /* 
  * basic styling for TextInput
  */
