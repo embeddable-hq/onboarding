@@ -20,10 +20,10 @@
     "react-chartjs-2": "^5.2.0"
   },
   "devDependencies": {
-    "@embeddable.com/core": "^2.6.4",
-    "@embeddable.com/react": "^2.7.2",
-    "@embeddable.com/sdk-core": "^3.5.1",
-    "@embeddable.com/sdk-react": "^3.5.0",
+    "@embeddable.com/core": "2.6.5",
+    "@embeddable.com/react": "2.7.3",
+    "@embeddable.com/sdk-core": "3.5.2",
+    "@embeddable.com/sdk-react": "3.5.0",
     "cross-env": "^7.0.3"
   }
 }
