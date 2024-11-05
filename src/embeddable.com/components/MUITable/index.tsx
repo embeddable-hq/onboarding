@@ -17,16 +17,6 @@ import Loading from '../util/Loading';
 import Error from '../util/Error'
 import ResizeListener from '../util/ResizeListener';
 
-const StyledTableCell = styled(TableCell)(({ theme }) => ({
-  [`&.${tableCellClasses.head}`]: {
-    backgroundColor: theme.palette.common.black,
-    color: theme.palette.common.white,
-  },
-  [`&.${tableCellClasses.body}`]: {
-    fontSize: 14,
-  },
-}));
-
 type Props = {
   ds: Dataset;
   cols: DimensionOrMeasure[];
@@ -54,9 +44,9 @@ export default (props: Props) => {
               <TableRow>
                 {
                   cols.map(col => (
-                    <StyledTableCell 
+                    <TableCell 
                       key={col.name}
-                      align={col.nativeType == 'number' ? 'right' : 'left'}>{col.title}</StyledTableCell>))
+                      align={col.nativeType == 'number' ? 'right' : 'left'}>{col.title}</TableCell>))
                 }
               </TableRow>
             </TableHead>
