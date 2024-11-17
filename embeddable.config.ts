@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [react],
   modelsSrc: './src/embeddable.com/models',
   componentsSrc: './src/embeddable.com/components',
+  presetsSrc: './src/embeddable.com/presets',
   errorFallbackComponent: './src/embeddable.com/components/util/ErrorHandler.jsx',
 
   // 
