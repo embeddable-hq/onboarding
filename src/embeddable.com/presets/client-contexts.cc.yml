@@ -1,0 +1,11 @@
+- name: Light
+  clientContext:
+    darkMode: false
+  canvas: 
+    background: '#fff'
+
+- name: Dark
+  clientContext:
+    darkMode: true
+  canvas: 
+    background: '#000'

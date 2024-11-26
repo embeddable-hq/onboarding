@@ -42,7 +42,8 @@ const COLORS = [
   '#FFD37A'
   ];
 
-const chartOptions = (showLegend) => ({
+const chartOptions = (showLegend, clientContext) => ({
+  color: clientContext?.darkMode && '#eee',
   responsive: true,
   maintainAspectRatio: false,
   cutout: '45%',
@@ -73,13 +74,14 @@ type Props = {
   metric: Measure; // [{ name, title }]
   results: DataResponse; // { isLoading, error, data: [{ <name>: <value>, ... }] }
   showLegend: boolean;
+  clientContext: { darkMode: boolean; }
 };
 
-export default (props: Props) => {
+const PieChart = (props: Props) => {
   console.log('BasicPieComponent.props', props); 
-  const { slice, metric, showLegend, results } = props;
+  const { clientContext, slice, metric, showLegend, results } = props;
   const { isLoading, data, error } = results;
-
+  
   if(isLoading) {
     return <Loading />
   }
@@ -93,6 +95,17 @@ export default (props: Props) => {
   // Chart.js pie expects counts like so: [23, 10, 5]
   const counts = data?.map(d => d[metric.name]);
 
-  return <Pie options={chartOptions(showLegend)} 
-              data={chartData(labels, counts)} />
+  return <Pie options={chartOptions(showLegend, clientContext)} 
+            data={chartData(labels, counts)} />;
 };
+
+export default (props: Props) => {
+  const { clientContext } = props;
+  const className = clientContext?.darkMode ? 'dark' : '';
+  const style = { height: '100%'};
+  return (
+    <div className={className} style={style}>
+      {PieChart(props)}
+    </div>
+  );
+}

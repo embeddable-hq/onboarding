@@ -25,10 +25,12 @@ export const meta = {
 } as const satisfies EmbeddedComponentMeta;
 
 export default defineComponent(Component, meta, {
-  props: (inputs: Inputs<typeof meta>) => {
-    return {
+  props: (inputs: Inputs<typeof meta>, _, clientContext) => {
+    return { 
       title: inputs.title,
-      body: inputs.body
+      body: inputs.body,
+      
+      clientContext
     };
   }
 });

@@ -19,6 +19,7 @@ const SECURITY_CONTEXT = {
 };
 const USER_KEY = 'some-user@domain.com';
 
+const DARK_MODE = false;
 
 async function handler(req, res) {
     console.log('Fetching token...')
@@ -67,11 +68,15 @@ async function handler(req, res) {
             type="module"
             src="${BASE_URL}/js/v1/"
           ></script>
+          <style>
+            body { background: ${DARK_MODE ? 'black': 'white'}; }
+          </style>
         </head>
         <body>
           <em-beddable
             base-url="${BASE_URL}/"
             token="${json.token}"
+            client-context='${JSON.stringify({ darkMode: DARK_MODE })}'
           ></em-beddable>
         </body>
       </html>`);

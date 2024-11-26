@@ -9,11 +9,13 @@ type Props = {
   label: string;
   defaultValue?: string;
   onChange: Change;
+  clientContext: { darkMode: boolean; }
 };
 
 export default (props: Props) => {
-  const { label, onChange } = props;
+  const { clientContext, label, onChange } = props;
   const [value, setValue] = useState('')
+  const className = `basic-text-input-component ${clientContext?.darkMode ? 'dark' : ''}`;
 
   const handleChange = newValue => {
     setValue(newValue);
@@ -26,7 +28,7 @@ export default (props: Props) => {
   }
 
   return (
-      <div className='basic-text-input-component'>
+      <div className={className}>
         <label>{label}
           <input
             type="text" 
