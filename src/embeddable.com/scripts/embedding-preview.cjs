@@ -72,6 +72,7 @@ async function handler(req, res) {
           <em-beddable
             base-url="${BASE_URL}/"
             token="${json.token}"
+            client-context="${JSON.stringify({})}"
           ></em-beddable>
         </body>
       </html>`);

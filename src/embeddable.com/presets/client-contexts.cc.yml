@@ -1,0 +1,11 @@
+- name: Light
+  clientContext:
+    country: United States
+  canvas: 
+    background: '#ff0000'
+
+- name: Dark
+  clientContext:
+    country: Germany
+  canvas: 
+    background: green

@@ -21,9 +21,9 @@
   },
   "devDependencies": {
     "@embeddable.com/core": "2.6.8",
-    "@embeddable.com/react": "2.7.5",
-    "@embeddable.com/sdk-core": "3.9.8",
-    "@embeddable.com/sdk-react": "3.8.2",
+    "@embeddable.com/react": "2.7.7",
+    "@embeddable.com/sdk-core": "3.10.0",
+    "@embeddable.com/sdk-react": "3.8.3",
     "cross-env": "^7.0.3"
   }
 }
