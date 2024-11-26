@@ -1,11 +1,11 @@
 - name: Light
   clientContext:
-    country: United States
+    darkMode: false
   canvas: 
-    background: '#ff0000'
+    background: '#fff'
 
 - name: Dark
   clientContext:
-    country: Germany
+    darkMode: true
   canvas: 
-    background: green
+    background: '#000'

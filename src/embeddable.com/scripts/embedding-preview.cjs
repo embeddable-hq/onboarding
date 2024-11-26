@@ -72,7 +72,7 @@ async function handler(req, res) {
           <em-beddable
             base-url="${BASE_URL}/"
             token="${json.token}"
-            client-context="${JSON.stringify({})}"
+            client-context="${JSON.stringify({ darkMode: false })}"
           ></em-beddable>
         </body>
       </html>`);
