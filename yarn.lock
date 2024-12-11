@@ -163,19 +163,19 @@
     "@babel/helper-string-parser" "^7.25.9"
     "@babel/helper-validator-identifier" "^7.25.9"
 
-"@embeddable.com/core@2.8.0":
-  version "2.8.0"
-  resolved "https://registry.npmjs.org/@embeddable.com/core/-/core-2.8.0.tgz"
-  integrity sha512-PM+Oa3DrnaQjT20DMV5j2sQmgkPTherCx1dcTqlH9yK77UzQp4vuVDNabYTCGh23ttrJkQxjm5n+vsO6UHKwuA==
+"@embeddable.com/core@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.npmjs.org/@embeddable.com/core/-/core-2.8.1.tgz"
+  integrity sha512-px0Z9B1p2Wr6f/5eeOnXcEtv5/WUweznupBIYC7YfkvADApAWxg7XzHjwUhLCCL0DhZJcOT5UtNF9e9cgNPBGQ==
   dependencies:
     jsdom "^24.1.1"
 
-"@embeddable.com/react@2.9.0":
-  version "2.9.0"
-  resolved "https://registry.npmjs.org/@embeddable.com/react/-/react-2.9.0.tgz"
-  integrity sha512-2cFi9l2j8SVOjRajcL81fW8hKb9eooGbai3GQOe6+g8xkI77s+CGQZ4ph0lFWwp7EwzX+JXkKaaosPpskYD1HQ==
+"@embeddable.com/react@2.9.1":
+  version "2.9.1"
+  resolved "https://registry.npmjs.org/@embeddable.com/react/-/react-2.9.1.tgz"
+  integrity sha512-P8IenI4AbRC9j9P//qZjtbruEv0ZfloScDHOX4HJF7eMrry2XobYO5vohhFo1DMxW77ipG8K7nF8k/3VgcfLCA==
   dependencies:
-    "@embeddable.com/core" "2.8.0"
+    "@embeddable.com/core" "2.8.1"
 
 "@embeddable.com/sdk-core@3.12.0":
   version "3.12.0"
@@ -1150,6 +1150,11 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
+
+fsevents@~2.3.2, fsevents@~2.3.3:
+  version "2.3.3"
+  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
+  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
 gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
